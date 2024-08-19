@@ -5,12 +5,6 @@ export enum Priority {
     High
 }
 
-export enum Status {
-    NotStarted = 'Not started',
-    InProgress = 'In progress',
-    Complete = 'Complete'
-}
-
 export enum Weekday {
     Sunday = 0,
     Monday,

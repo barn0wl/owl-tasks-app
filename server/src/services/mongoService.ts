@@ -16,6 +16,7 @@ export const convertTaskToMongo = (task: Task): TaskDocument => {
     return {
         name: task.name,
         recurrenceInterval: task.recurrenceInterval,
+        tags: task.tags,
         done: task.isChecked,
         priority: task.priority,
         due: task.nextDue?? null,

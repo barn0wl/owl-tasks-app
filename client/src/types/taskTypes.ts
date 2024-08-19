@@ -4,11 +4,12 @@ export interface Task {
     nextDue : string,
     priority: Priority,
     isChecked : boolean,
+    tags: string[],
     recurrenceInterval: 'N/A' | 'Daily' | 'Weekly' | 'Monthly',
     recurrenceDays?: Weekday[]
 }
 
-enum Weekday {
+export enum Weekday {
     Sunday = 0,
     Monday,
     Tuesday,
@@ -18,7 +19,7 @@ enum Weekday {
     Saturday
 }
 
-enum Priority {
+export enum Priority {
     None = 0,
     Low,
     Mid,
